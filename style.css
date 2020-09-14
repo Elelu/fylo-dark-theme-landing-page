@@ -89,6 +89,7 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 3em;
+    padding: 60px 10%;
   }
 
   .about {
