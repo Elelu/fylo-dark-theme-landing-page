@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  Font size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Raleway'; */
+}
+
+#navigation {
+  background-color: hsl(217, 28%, 15%);
+  padding: 10px 5%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.logo {
+  height: 30px;
+}
+
+nav {
+  text-align: right;
+  align-self: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  margin-left: 5%;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Raleway', sans-serif;
+}
+p{
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+#header {
+  text-align: center;
+  padding: 50px 30% 200px 30%;
+  background-color: hsl(217, 28%, 15%);
+  background-image: url(images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: hsl(0, 0%, 100%);
+}
+
+@media only screen and (max-width: 700px){
+
+  #header {
+    background-image: url(images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+}
+.illustration-intro {
+  width: 100%;
+}
+
+button {
+  border-radius: 25px;
+  background-color: hsl(176, 68%, 64%);
+  padding: 8px 45px;
+  border-width: 0;
+  color: hsl(0, 0%, 100%);
+}
+/*
+.bg-curve{
+  display: block;
+  background-color: hsl(217, 28%, 15%);
+} */
+#About {
+  background-color: hsl(218, 28%, 13%);
+  padding: 60px 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
+}
+
+.about {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+@media only screen and (max-width: 700px){
+
+  #About {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3em;
+  }
+
+  .about {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+#productive {
+  background-color: hsl(218, 28%, 13%);
+  padding: 30px 5%;
+  color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3em;
+}
+
+.stay-productive {
+  align-self: center;
+}
+
+@media only screen and (max-width: 700px){
+
+  #productive {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 3em;
+  }
+
+  .stay-productive {
+    align-self: center;
+  }
+}
+
+#testimonials {
+  padding: 30px 5% 320px 5%;
+  background-color: hsl(218, 28%, 13%);
+}
+
+.testimonial {
+  padding: 0 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2em;
+}
+
+.testimony {
+  background-color: hsl(219, 30%, 18%);
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+  padding: 20px;
+}
+
+.profile {
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 700px){
+  .testimonial {
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+  }
+}
+
+.early-acess{
+  top: -150px;
+  width: 60%;
+  background-color: hsl(219, 30%, 18%);
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  left: 18%;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 0 5px 0;
+}
+
+.input{
+  width: 200px;
+  border-radius: 25px;
+  background-color: #fff;
+  border-width: 0;
+  padding: 10px;
+}
+#details {
+  color: #fff;
+  background-color: hsl(216, 53%, 9%);
+  padding:50px 5% 40px 5%;
+
+}
+.details{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.address, .phone{
+  display: inline;
+}
+.details img{
+  grid-column: 1/span 3;
+}
+.detail-2 ul, .detail-3 ul, .detail-4, .detail-new{
+  width: 100%;
+  text-align: left;
+  margin-top: 0;
+}
+.detail-2 ul li, .detail-3 ul li {
+  display: block;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  background-color: hsl(216, 53%, 9%);
+  padding: 5% 40px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+  @media only screen and (max-width: 700px){
+
+    .early-acess{
+      top: -150px;
+      width: 90%;
+      position: relative;
+      left:0;
+      align-self: center;
+    }
+
+    .input{
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .details{
+      grid-template-columns:1fr;
+    }
+
+    .detail-2 ul, .detail-3 ul, .detail-4, .detail-new{
+      margin-top: 0;
+      padding-left: 0;
+    }
+    .detail-2 ul li, .detail-3 ul li {
+
+    }
+
+  }
+
+}
